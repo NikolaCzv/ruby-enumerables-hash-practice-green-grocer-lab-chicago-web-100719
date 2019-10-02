@@ -53,7 +53,8 @@ cart_with_disounts_applied = apply_clearance(cart_with_coupons_applied)
 total = 0.0 
 
 cart_with_disounts_applied.keys.each do |item|
-  total += cart_with_disounts_applied[item][:price]*[]
+  total += cart_with_disounts_applied[item][:price]*cart_with_disounts_applied[item][:count]
+  
 
 
 
