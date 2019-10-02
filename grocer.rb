@@ -46,5 +46,5 @@ end
 
 
 def checkout(cart, coupons)
-
+consol_cart = 
 end
