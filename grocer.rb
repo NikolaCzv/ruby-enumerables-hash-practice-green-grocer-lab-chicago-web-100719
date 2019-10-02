@@ -24,7 +24,7 @@ coupons.each do |coupon|
         cart[new_name][:count] += coupon[:num]
       else 
         cart[new_name] = {
-          
+          count: coupon
         }
 end
 
