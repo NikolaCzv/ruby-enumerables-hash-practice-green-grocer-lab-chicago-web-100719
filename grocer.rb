@@ -26,7 +26,7 @@ coupons.each do |coupon|
         cart[new_name] = {
           count: coupon[:num], 
           price: coupon[:cost]/coupon[:num],
-          
+          clearance: 
         }
 end
 
