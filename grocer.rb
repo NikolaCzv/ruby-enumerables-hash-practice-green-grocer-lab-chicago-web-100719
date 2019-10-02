@@ -16,7 +16,7 @@ end
 
 
 def apply_coupons(cart, coupons)
-
+coupons.each do ||
 end
 
 def apply_clearance(cart)
