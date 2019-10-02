@@ -21,7 +21,9 @@ coupons.each do |coupon|
     if cart[coupon[:item]][:count] >= coupon[:num]
       new_name = "#{coupon[:item]} W/CUOPON"
       if cart[new_name]
-        cart[new_name][:count] += [:count]
+        cart[new_name][:count] += coupon[:num]
+      else 
+        
 end
 
 def apply_clearance(cart)
