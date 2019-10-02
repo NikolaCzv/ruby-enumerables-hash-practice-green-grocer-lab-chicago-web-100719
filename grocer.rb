@@ -26,9 +26,10 @@ coupons.each do |coupon|
         cart[new_name] = {
           count: coupon[:num], 
           price: coupon[:cost]/coupon[:num],
-          clearance: 
+          clearance: cart[coupon[:item]][:clearance]
         }
 end
+
 
 def apply_clearance(cart)
   # code here
